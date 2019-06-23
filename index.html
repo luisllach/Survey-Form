@@ -1,0 +1,70 @@
+<body id="main">
+  <div class="container">
+    <h1 id="title">Survey Form - Elon Musk Fan Club</h1>
+    <p id="description">Let us know more about Elon's fans!</p>
+    <form id="survey-form" action="submit">
+      <div class="form-row">
+        <label id="name-label" class="left" for="name">* Name:</label>
+        <input id="name" class="right" type="text" name="name" placeholder="Enter your full name" required/>
+      </div>
+      <div class="form-row">
+        <label id="email-label" class="left" for="email">* Email:</label>
+        <input id="email" class="right" type="email" name="email"  placeholder="Enter your email" required/>
+      </div>
+      <div class="form-row">
+        <label id="number-label" class="left" for="number">* Age:</label>
+        <input id="number" class="right" type="number" name="number" min=0 max=125 placeholder="Between 0 and 125" required/>
+      </div>
+      <div class="form-row">
+        <label id="continent-label" class="left" for="dropdown">Which continent are you from?</label>
+        <select id="dropdown" class="right" form="survey-form">
+          <option value="north america">North America</option>
+          <option value="south america">South America</option>
+          <option value="europe">Europe</option>
+          <option value="asia">Asia</option>
+          <option value="africa">Africa</option>
+          <option value="australia">Australia</option>
+          <option value="antarctica">Antarctica</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label id="gender-label" class="left" for="gender">Gender:</label>
+        <div id="gender" class="multipleOptions right">
+          <label for="gender-male">Male</label>
+          <input id="gender-male" name="gender" type="radio" value="male" checked>
+          <label for="gender-female">Female</label>
+          <input id="gender-female" name="gender" type="radio" value="female">
+          <label for="gender-other">Other</label>
+          <input id="gender-other" name="gender" type="radio" value="other">
+        </div>
+      </div>
+      <div class="form-row">
+        <label id="media-label" class="left" for="media">How do you get to this site?</label>
+        <div id="media" class="multipleOptions right">
+          <input id="media-friend" type="checkbox" name="media" value="friend">
+          <label for="media-friend">A friend</label>
+          <br>
+          <input id="media-google" type="checkbox" name="media" value="google">
+          <label for="media-google">Google</label>
+          <br>
+          <input id="media-email" type="checkbox" name="media" value="email">
+          <label for="media-email">Email</label>
+          <br>
+          <input id="media-social" type="checkbox" name="media" value="social">
+          <label for="media-social">Social media</label>
+          <br>
+          <input id="media-other" type="checkbox" name="media" value="other">
+          <label for="media-other">Other</label>
+        </div>
+      </div>
+      <div class="form-row">
+        <label id="comments-label" class="left" for="comments">Wanna share something with us? Tell us about it!:</label>
+        <textarea id="comments" class="right"></textarea>
+      </div>
+      <div class="form-row">
+        <input id="submit" type="submit" value="Send Survey">
+      </div>
+    </form>
+  </div>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
